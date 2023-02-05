@@ -378,7 +378,10 @@ bkcore.hexgl.tracks.Cityscape = {
 		var plane = new THREE.Mesh(new THREE.PlaneGeometry(200, 200),img);
 		plane.overdraw = true;
 		plane.name = 'gaurav'
-		plane.scale = {x:100, y:100, z:100}
+		plane.scale ={x: 5, y: 5, z: 5}
+		plane.position.set(-1980, 500,1); // need to set the position
+		plane.rotation.set( -1.3,  3,  0);
+		// plane.up.set( 0,  1,  0);
 		scene.add(plane);
 		console.log({plane});
 
