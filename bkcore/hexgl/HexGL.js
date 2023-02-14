@@ -40,7 +40,7 @@ bkcore.hexgl.HexGL = function(opts)
 	// mobile + mid quality OR desktop + low quality => 1 (MID)
 	// mobile + high quality => 2 (HIGH)
 	// desktop + mid or high quality => 3 (VERY HIGH)
-	this.quality = opts.quality == undefined ? 3 : opts.quality;
+	this.quality = opts.quality == undefined ? 3 : 0;
 
 	if(this.quality === 0)
 	{

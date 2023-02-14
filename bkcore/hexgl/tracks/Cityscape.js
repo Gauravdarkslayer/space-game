@@ -372,16 +372,18 @@ bkcore.hexgl.tracks.Cityscape = {
 
 
 		var img = new THREE.MeshBasicMaterial({ //CHANGED to MeshBasicMaterial
-			map:THREE.ImageUtils.loadTexture('https://media.licdn.com/dms/image/C4E03AQE8col6TikVNw/profile-displayphoto-shrink_800_800/0/1638552612743?e=1680134400&v=beta&t=HS-D2Kvc474DsR0ANjriPiAL6sDn4ZKrQhdBPh8ijQc')
+			map:THREE.ImageUtils.loadTexture('textures/ads/criteo-logo.jpeg')
 		});
 		img.map.needsUpdate = true; //ADDED
 		var plane = new THREE.Mesh(new THREE.PlaneGeometry(200, 200),img);
 		plane.overdraw = true;
 		plane.name = 'gaurav'
-		plane.scale ={x: 5, y: 5, z: 5}
-		plane.position.set(-1980, 500,1); // need to set the position
-		plane.rotation.set( -1.3,  3,  0);
+		plane.scale ={x: 3, y: 3, z: 1.5}
+		plane.position.set(-520, 500,167); // need to set the position
+		plane.rotation.set( -1.5,  3.2, -1.7);
 		// plane.up.set( 0,  1,  0);
+		plane.material.side = THREE.DoubleSide;
+
 		scene.add(plane);
 		console.log({plane});
 
